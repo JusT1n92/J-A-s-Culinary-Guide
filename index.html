@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ J&A's Culinary Guide ✨</title>
+    <link rel="icon" type="image/jpg" href="Logo2.jpg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            background-image: url(Logo2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+        header, nav, main, article, aside, section, footer {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+        }
+        header img.logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 65px;
+            left: 50px;
+            object-fit: cover;
+            border: 3px solid #fff;
+        }
+        nav {
+            background: #413b3b;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #777;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        article {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            flex: 1;
+            background: #f0f0f0;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: 3px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 8px;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .back-to-top:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ul li a:hover {
+            color: #555;
+        }
+        .food-item {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .food-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .food-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            header img.logo {
+                width: 100px;
+                height: 100px;
+                top: 20px;
+                left: 20px;
+            }
+
+            header {
+                padding: 30px 10px;
+                font-size: 90%;
+            }
+
+            nav {
+                flex-direction: column;
+                font-size: 14px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            main {
+                flex-direction: column;
+                margin: 20px 10px;
+            }
+
+            article, aside {
+                margin: 0;
+                width: 100%;
+            }
+
+            aside {
+                margin-top: 20px;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            .food-item img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            .food-item p {
+                font-size: 14px;
+            }
+
+            ul li {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            footer {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#top"><img src="To top.png" alt="Back to Top" class="back-to-top">↑</a>
+    <header id="top">
+        <img src="Logo2.jpg" alt="Company Logo" class="logo">
+        <h1>🍜 J&A's Culinary Guide 🍜</h1>
+        <p>Sharing knowledge, passion, and delicious Filipino recipes 🍳🍞🍰🍜</p>
+    </header>    
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Delicious Filipino Cooking Adventures 🍳</h2>
+            <p>Published on: <strong>April 7, 2025</strong></p>
+
+            <section>
+                <h3>Purpose & Goals:</h3>
+                <p>At J&A's Culinary Guide, our mission is simple: to share our love for Filipino cooking, provide helpful resources, and inspire others to try new recipes. This website is not just about cooking; it's about creating meaningful connections through food, exploring new flavors, and embracing creativity in the kitchen.</p>
+            </section>
+
+            <section>
+                <h3>Our Famous Filipino Foods 🍕</h3>
+                <div class="food-item">
+                    <img src="adobo.jpg" alt="Adobo">
+                    <p><strong>Adobo</strong><details>- A savory stew made with pork or chicken, marinated in soy sauce, vinegar, garlic, and spices. It's one of the most iconic Filipino dishes. 
+                        <a href="https://panlasangpinoy.com/filipino-chicken-adobo-recipe/#wprm-recipe-container-47216" target="_blank">CLick to View Recipe</a>
+                    </details></p>
+                </div>
+                <div class="food-item">
+                    <img src="sinigang.jpg" alt="Sinigang">
+                    <p><strong>Sinigang</strong><details>- A tangy and savory soup made with tamarind, pork, shrimp, or fish, and a variety of vegetables, perfect for a comforting meal.
+                        <a href="https://www.kawalingpinoy.com/sinigang-na-baboy/#wprm-recipe-container-17881" target="_blank">Click to View Recipe</a>
+                    </details></p>
+                </div>
+                <div class="food-item">
+                    <img src="letchon.jpg" alt="Lechon">
+                    <p><strong>Lechon</strong><details>- A whole roasted pig, crispy on the outside and tender on the inside, often served during celebrations and special occasions. 
+                        <a href="https://www.tasteatlas.com/lechon/recipe" target="_blank">Click to View Recipe</a>
+                    </details></p>
+                </div>
+                <div class="food-item">
+                    <img src="pancit.jpg" alt="Pancit">
+                    <p><strong>Pancit Bihon</strong><details>- A noodle dish that comes in many varieties, commonly served with vegetables, meats, and sometimes seafood for special gatherings.
+                        <a href="https://panlasangpinoy.com/pancit-guisado/" target="_blank">Click to View Recipe</a>
+                    </details></p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Check out this tutorial video! 🎥</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aopS3q6f1GY" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h3>Our University Location 🏫</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d693.953001959099!2d123.89592177767541!3d10.294501901096401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99bfcc60d650d%3A0x5ee73506c68dd233!2sCebu%20Eastern%20College%20Cebu%20city!5e0!3m2!1sen!2sph!4v1742125045513!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </article>
+
+        <aside>
+            <h3>About the Author</h3>
+            <p>Hi there! We're passionate about Filipino cooking, exploring new flavors, and bringing people together through food. Our journey in the kitchen started with simple recipes, and now we're sharing our favorite dishes, tips, and cooking adventures with you. Whether you're a beginner or an experienced cook, we hope to inspire you to get creative, try new recipes, and enjoy the process of making delicious meals. Let's cook, share, and learn together!</p>
+        
+            <h3>Cooking Tips for Beginners</h3>
+            <ul>
+                <li><strong>Start Simple:</strong> Don't be afraid to begin with easy recipes and build your skills as you go.</li>
+                <li><strong>Invest in Quality Tools:</strong> Good knives, cutting boards, and pots/pans can make a world of difference.</li>
+                <li><strong>Prep Ingredients First:</strong> Always have your ingredients ready before you start cooking.</li>
+                <li><strong>Experiment with Flavors:</strong> Don't be afraid to add your own twist to recipes and experiment with spices.</li>
+                <li><strong>Don't Rush:</strong> Take your time and enjoy the cooking process. Great meals often take time!</li>
+            </ul>
+        
+            <h3>Popular Filipino Recipes to Try 🍲</h3>
+            <ul>
+                <li><a href="https://www.kawalingpinoy.com/adobong-manok-sa-patis/" target="_blank">Adobong Manok (Chicken Adobo)</a></li>
+                <li><a href="https://www.kawalingpinoy.com/pork-menudo/" target="_blank">Pork Menudo</a></li>
+                <li><a href="https://www.kawalingpinoy.com/bopis/" target="_blank">Bopis</a></li>
+                <li><a href="https://www.kawalingpinoy.com/sinigang-na-baboy/" target="_blank">Sinigang na Baboy (Pork Sinigang)</a></li>
+                <li><a href="https://www.kawalingpinoy.com/lechon-kawali/" target="_blank">Lechon Kawali</a></li>
+            </ul>
+            <h3>Related Posts</h3>
+            <ul>
+                <li><a href="https://www.thekitchn.com/filipino-recipes-23650147" target="_blank">Learn More Recipe</a></li>
+                <li><a href="https://www.youtube.com/watch?v=BHcyuzXRqLs" target="_blank">50 Cooking Tips</a></li>
+            </ul>
+        </aside>        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Justin Abendan & Arnel Ardina. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

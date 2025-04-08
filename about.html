@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨J&A's Personal Information✨</title>
+    <link rel="icon" type="image/jpg" href="Logo2.jpg">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          color: #333;
+          background-image: url(Logo2.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+    
+        header {
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          text-align: center;
+          padding: 40px;
+          border-radius: 15px;
+        }
+    
+        nav {
+          background-color: #413b3b;
+          padding: 15px 0;
+          text-align: center;
+        }
+    
+        nav ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        nav ul li {
+          display: inline;
+          margin-right: 15px;
+        }
+    
+        nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 8px 15px;
+          border-radius: 5px;
+          transition: background 0.3s;
+        }
+    
+        nav ul li a:hover {
+          background: #777;
+        }
+    
+        main {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          background: white;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          text-align: center;
+        }
+    
+        .profile-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+          text-align: center;
+        }
+    
+        .profile {
+          width: 48%;
+          background: #d3cdcd;
+          padding: 15px;
+          border-radius: 10px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .profile img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 3px solid #333;
+          margin-bottom: 10px;
+        }
+    
+        .skills {
+          text-align: left;
+          padding: 20px;
+        }
+    
+        .skills ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        .skills ul li {
+          background: #ddd;
+          margin: 5px 0;
+          padding: 8px;
+          border-radius: 5px;
+        }
+    
+        footer {
+          text-align: center;
+          padding: 10px;
+          background: #555;
+          color: white;
+          margin-top: 20px;
+        }
+    
+        article {
+          background-color: #eee;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: left;
+        }
+    
+        /* MEDIA QUERIES FOR RESPONSIVENESS */
+        @media (max-width: 768px) {
+          header {
+            padding: 30px 15px;
+            font-size: 90%;
+          }
+    
+          nav ul li {
+            display: block;
+            margin: 10px 0;
+          }
+    
+          .profile-container {
+            flex-direction: column;
+          }
+    
+          .profile {
+            width: 90%;
+          }
+    
+          main {
+            margin: 10px;
+            padding: 15px;
+          }
+    
+          .skills {
+            padding: 10px;
+          }
+    
+          .skills ul li {
+            font-size: 14px;
+            padding: 6px;
+          }
+    
+          article {
+            padding: 15px;
+          }
+    
+          article section h4 {
+            font-size: 16px;
+          }
+    
+          footer {
+            font-size: 14px;
+            padding: 8px;
+          }
+        }
+    
+        @media (max-width: 480px) {
+          header h1 {
+            font-size: 1.4rem;
+          }
+    
+          nav ul li a {
+            padding: 6px 12px;
+            font-size: 14px;
+          }
+    
+          .profile img {
+            width: 120px;
+            height: 120px;
+          }
+    
+          .skills ul li {
+            font-size: 13px;
+          }
+    
+          article section p {
+            font-size: 14px;
+          }
+    
+          article section h4 {
+            font-size: 15px;
+          }
+    
+          footer {
+            font-size: 12px;
+          }
+        }
+      </style>
+</head>
+<body>
+<header>
+    <h1>✨ J&A's Personal Information ✨</h1>
+</header>
+<br>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>About Us - Passionate About Cooking 🍳</h2>
+        <p>Welcome to J&A's Culinary Journey! We're Justin and Arnel, two food enthusiasts with a passion for sharing our love for cooking, exploring flavors, and connecting with others through delicious recipes.
+        As we embark on this culinary adventure, we aim to inspire you to try new dishes, embrace your creativity in the kitchen, and, most importantly, enjoy the process of cooking!</p>
+    </section>
+
+    <section class="skills">
+        <h2>Our Culinary Skills</h2>
+        <ul>
+            <li>Basic Cooking Techniques</li>
+            <li>Knife Skills</li>
+            <li>Cleaning and Hygiene</li>
+            <li>Creativity</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Personal Information</h2>
+        <div class="profile-container">
+            <div class="profile">
+                <img src="Profile.jpg" alt="Justin Abendan">
+                <details>
+                <p><b>Name:</b> Justin Abendan</p>
+                <p><b>Date of Birth:</b> July 4, 2004</p>
+                <p><b>Age:</b> 20</p>
+                <p><b>Location:</b> Basak San Nicolas, Cebu City</p>
+                <p><b>Study At:</b> Cebu Eastern College</p>
+                <p><b>Previous Education:</b> Cebu City Don Carlos A. Gothong Memorial National High School</p>
+                </details>
+            </div>
+            <div class="profile">
+                <img src="Profile1.jpg" alt="Arnel Ardina">
+                <details>
+                <p><b>Name:</b> Arnel Ardina</p>
+                <p><b>Date of Birth:</b> January 14, 2006</p>
+                <p><b>Age:</b> 19</p>
+                <p><b>Location:</b> Talamban, Cebu City</p>
+                <p><b>Study At:</b> Cebu Eastern College</p>
+                <p><b>Previous Education:</b> Talamban National High School</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>🎮 Our Personal Interests</h2>
+        <p>When we're not cooking or studying, we have a variety of interests that keep us entertained and inspired.</p>
+        <ul>
+            <details>
+            <li>💻 Technology & Coding: Exploring new programming languages, building projects, and staying up-to-date with the tech world.</li>
+            <li>🎮 Gaming: We love unwinding with video games whether it's a multiplayer adventure or solving complex puzzles.</li>
+            <li>📚 Reading: Books, articles, and blogs help us expand our knowledge and spark new ideas for our culinary and tech projects.</li>
+            <li>🎶 Music: From relaxing beats to energetic playlists, music keeps us going, whether we're cooking or coding.</li>
+            </details>
+        </ul>
+    </section>
+    <br><br><br>
+    <section>
+        <article>
+            <header>
+                <h3>🎒 Life at School</h3>
+            </header>
+
+            <section>
+                <h4>🧠 Schoolwork: The Never Ending Hustle</h4>
+                <p>
+                    Assignments, quizzes, group projects you name it, we've got it. Lately, we've been working on a final project that transforms our portfolio website into a personal blog. It's a mix of coding, creativity, and caffeine. HTML, CSS—they're like our second language now. It's tough, but seeing everything come together is super satisfying.
+                </p>
+            </section>
+
+            <section>
+                <h4>👯 Friendships: The Real MVPs</h4>
+                <p>
+                    If there's one thing that keeps us sane, it's our friends. Whether we're joking around in the lab or venting over a plate of fries after class, they're our support system. We help each other out with code problems, review each other's presentations, and send memes when things get too stressful.
+                </p>
+            </section>
+
+            <section>
+                <h4>🧹 Responsibilities: More Than Just Grades</h4>
+                <p>
+                    It's not all just about passing exams. There's a ton of responsibilities too group leadership, helping classmates catch up, even just managing your own time wisely. Being a student also means being organized (well, trying to be), showing up, and staying motivated even when you'd rather just sleep.
+                </p>
+            </section>
+
+            <section>
+                <h4>🎯 What We've Learned</h4>
+                <p>
+                    If school has taught us one thing, it's how to <strong>balance</strong>. Balancing deadlines with downtime, work with friendships, and stress with self-care. It's not perfect, but it's real and we're learning more about ourselves every single day.
+                </p>
+            </section>
+
+            <footer style="text-align: center; margin-top: 20px;">
+                <p>Thanks for reading! If you're a student too, hang in there—we've got this. 💪</p>
+            </footer>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Justin Abendan & Arnel Ardina. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
