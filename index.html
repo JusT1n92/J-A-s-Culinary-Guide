@@ -161,54 +161,58 @@
         }
         
         @media (max-width: 768px) {
-            header img.logo {
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 10px;
+            font-size: 90%;
+            position: relative;
+            }
+
+        header img.logo {
             width: 50px;
             height: 50px;
             position: static;
             margin: 0 auto;
-        }
+            }
 
-    header {
-            padding: 30px 10px;
-            font-size: 90%;
-    }
-
-    nav {
+        nav {
             flex-direction: column;
             font-size: 14px;
             padding: 0 10px;
-    }
+            }
 
-    nav a {
+        nav a {
             display: block;
             margin: 10px 0;
-    }
+            }
 
-    main {
+        main {
             flex-direction: column;
             margin: 20px 10px;
-    }
+        }
 
-    article, aside {
+        article, aside {
             width: 100%;
             margin: 0;
             padding: 15px 10px;
             box-sizing: border-box;
-    }
+            }
 
-    aside {
+        aside {
         margin-top: 20px;
-    }
+        }
 
-    iframe {
+        iframe {
         width: 100%;
         height: auto;
-    }
+        }
 
-    .food-item img {
+        .food-item img {
         width: 80px;
         height: 80px;
-    }
+        }
 
     .back-to-top {
         width: 40px;
